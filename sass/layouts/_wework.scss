@@ -1,0 +1,26 @@
+.wework {
+  padding-top: 0;
+}
+.wework__list{
+  display: flex;
+}
+.wework__item:not(:last-child) {
+  margin-right: 30px;
+}
+.wework__item {
+  position: relative;
+}
+.wework__text {
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--wework-text-background);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+}

@@ -1,0 +1,26 @@
+.specialties__text {
+  line-height: 1.71;
+}
+.specialties__list {
+  display: flex;
+}
+.specialties__icon-area {
+  display: flex;
+  padding: 25px 100px;
+  background-color: var(--comand-background);
+  margin-bottom: 30px;
+}
+.specialties__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.19;
+  color: var(--title-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.specialties__item {
+  width: 270px;
+}
+.specialties__item:not(:last-child) {
+  margin-right: 30px;
+}
