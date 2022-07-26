@@ -1,8 +1,24 @@
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px; 
+  
+  @media screen and (min-width:1200px){
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
+}
+
 .portfolio__list-filtr {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  gap: 10px;
+  column-gap: 8px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width:767px){
+    justify-content: flex-start;
+  }
 }
 
 .portfolio__filtr-botton {
@@ -31,10 +47,18 @@
 .list-article {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent);
+  gap: 30px;
+
 }
 .article {
-  flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+  width: 100%;
+
+  @media screen and (min-width:768px){
+  width: 354px;
+  }
+@media screen and (min-width:1200px){
+  width: 370px;
+  }
 }
 .article-link {
   display: block;
@@ -46,6 +70,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .hidden-portfolio-text {
   display: flex;
   justify-content: center;

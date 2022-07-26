@@ -3,24 +3,41 @@
 }
 .specialties__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .specialties__icon-area {
   display: flex;
+  justify-content: center;
   padding: 25px 100px;
   background-color: var(--comand-background);
   margin-bottom: 30px;
 }
 .specialties__subtitle {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.19;
   color: var(--title-color);
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .specialties__item {
-  width: 270px;
-}
-.specialties__item:not(:last-child) {
-  margin-right: 30px;
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: 270px;
+  }
 }

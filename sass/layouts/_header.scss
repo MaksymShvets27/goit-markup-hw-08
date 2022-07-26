@@ -1,17 +1,47 @@
 .header {
   border: 1px solid #ececec;
-  padding: 24px 0px;
+  padding: 15px 0px;
+  @media screen and (min-width: 768px) {
+    height: 80px;
+    padding: 21px 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 28px 0px;
+  }
 }
 .header__container {
   display: flex;
   align-items: center;
 }
 .header__log {
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    font-size: 26px;
+  }
 }
 
 .nav {
   margin-right: auto;
+
+  @media screen and (max-width:767px) {
+      position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
 }
 .nav__list {
   display: flex;
@@ -33,20 +63,61 @@
   background-color: var(--blue-color);
   bottom: 0;
   left: 0;
-  transform: translateY(34px);
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(calc(50% + 42px));
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translateY(calc(50% + 28px));
+  }
 }
 .header__contacts {
   display: flex;
+
+  @media screen and (max-width:767px) {
+      position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }
+  
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 .header__contact-item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 .header__contact {
   display: flex;
   align-items: center;
   color: var(--main-color);
+
+  @media screen and (max-width:767px) {
+  font-size: 14px;
+line-height: 1.17;
+  }
 }
 .header__icon {
+  margin-right: 8px;
+  fill: currentColor; 
+
+  @media screen and (min-width:1200px){
   margin-right: 10px;
-  fill: currentColor;
+  }
 }
+

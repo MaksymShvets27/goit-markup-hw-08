@@ -53,6 +53,74 @@
             >
           </li>
         </ul>
+        <button class="header__menu-button" type="button" data-menu-button>
+          <svg class="menu__icon" width="24" height="16">
+            <use class="menu__icon-burger" href="./images/icons.svg#icon-menu"></use>
+            <use class="menu__icon-close" href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+
+        <div class="header__menu" data-menu>
+          <ul class="menu__nav list">
+            <li class="menu__item">
+              <a class="link menu__item--current" href="./index.html">Студия</a>
+            </li>
+            <li class="menu__item"><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li class="menu__item"><a class="link" href="#">Контакты</a></li>
+          </ul>
+          <ul class="list menu__contacts">
+            <li class="menu__contact-item">
+              <a class="menu__contact-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            <li class="menu__contact-item">
+              <a class="menu__contact-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu__social-list list">
+            <li class="menu__social-item">
+              <a
+                class="menu__social-link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label=""
+                >Instagram</a
+              >
+            </li>
+            <li class="menu__social-item">
+              <a
+                class="menu__social-link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label=""
+                >Twitter</a
+              >
+            </li>
+            <li class="menu__social-item">
+              <a
+                class="menu__social-link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label=""
+                >Facebook</a
+              >
+            </li>
+            <li class="menu__social-item">
+              <a
+                class="menu__social-link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label=""
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -438,6 +506,7 @@
           </ul>
         </div>
       </section>
+
       <section class="section clients">
         <div class="container">
           <h2 class="title client__title">Постоянные клиенты</h2>
@@ -679,5 +748,6 @@
       </form>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

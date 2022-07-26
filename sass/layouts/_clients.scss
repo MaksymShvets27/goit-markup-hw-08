@@ -1,20 +1,30 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
-}
+
+
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--main-icon-color);
   transition: color var(--main-anim), border-color var(--main-anim);
+
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 .clients__link:hover,
 .clients__link:focus {
