@@ -12,7 +12,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: color var(--main-anim), background-color var(--main-anim);
+  transition: fill var(--main-anim), background-color var(--main-anim);
 }
 
 .social__link:hover,

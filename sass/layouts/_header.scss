@@ -64,12 +64,12 @@
   bottom: 0;
   left: 0;
 
-  @media screen and (min-width: 768px) {
-    transform: translateY(calc(50% + 42px));
+    @media screen and (min-width: 768px) {
+    transform: translateY(calc(50% + 27.5px));
   }
 
-  @media screen and (min-width: 768px) {
-    transform: translateY(calc(50% + 28px));
+  @media screen and (min-width: 1200px) {
+    transform: translateY(calc(50% + 26px));
   }
 }
 .header__contacts {

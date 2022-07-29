@@ -11,13 +11,17 @@
 .portfolio__list-filtr {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   column-gap: 8px;
   row-gap: 15px;
   flex-wrap: wrap;
 
   @media screen and (max-width:767px){
     justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+   @media screen and (max-width:1200px){
+    margin-bottom: 50px;
   }
 }
 

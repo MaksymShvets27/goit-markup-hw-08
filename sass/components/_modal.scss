@@ -32,7 +32,7 @@
   align-items: center;
   fill: black;
   cursor: pointer;
-  transition: color var(--main-anim);
+  transition: fill var(--main-anim);
 }
 .modal-close-button:hover,
 .modal-close-button:focus {
@@ -69,8 +69,7 @@
   border: 1px solid #21212133;
   border-radius: 4px;
   fill: var(--title-color);
-  transition: border-color var(--main-anim);
-  fill: var(--main-anim);
+  transition: border-color var(--main-anim), fill var(--main-anim);
 }
 .modal-unit-area:hover,
 .modal-unit-area:focus,
